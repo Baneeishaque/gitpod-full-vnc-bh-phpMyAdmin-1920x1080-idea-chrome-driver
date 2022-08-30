@@ -10,7 +10,9 @@ ports:
     onOpen: open-browser
   - name: phpMyAdmin
     port: 80
-    onOpen: open-browser  
+    onOpen: open-browser
+  - port: 6942
+    onOpen: ignore
 
 tasks:
   - name: Insatll & Configure BashHub
