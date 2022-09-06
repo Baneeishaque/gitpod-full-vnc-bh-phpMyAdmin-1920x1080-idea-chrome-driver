@@ -41,6 +41,6 @@
 
 ### Base Image : [baneeishaque/gitpod-full-vnc-bh-phpmyadmin-1846x968-idea-chrome-driver](https://hub.docker.com/r/baneeishaque/gitpod-full-vnc-bh-phpmyadmin-1846x968-idea-chrome-driver)
 
-### Base Image Repo. : [ Baneeishaque /gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver ](https://github.com/Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver)
+### Base Image Repo. : [ Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver ](https://github.com/Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver)
 
 [//]: # "[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver)"
