@@ -1,4 +1,4 @@
-# Gitpod Full VNC Workspace with [BashHub](https://bashhub.com), [phpMyAdmin](https://www.phpmyadmin.net), [IntelliJ IDEA](https://www.jetbrains.com/idea) & [ChromeDriver](https://chromedriver.chromium.org)
+# Gitpod Full VNC Workspace with [BashHub](https://bashhub.com), [phpMyAdmin](https://www.phpmyadmin.net), [IntelliJ IDEA](https://www.jetbrains.com/idea) & [ChromeDriver](https://chromedriver.chromium.org) at 1920x1080 Resolution
 
 [//]: # "![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver/latest)"
 [//]: # "![Docker Image Size (tag)](https://img.shields.io/docker/image-size/baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver/latest)"
@@ -37,14 +37,10 @@
 
 ---
 
-[//]: # "### Docker Hub : [baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver](https://hub.docker.com/repository/docker/baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver)"
+### Docker Hub : [baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver](https://hub.docker.com/repository/docker/baneeishaque/gitpod-full-vnc-bh-phpmyadmin-1920x1080-idea-chrome-driver)
 
-### Base Image : [gitpod/workspace-full-vnc](https://hub.docker.com/r/gitpod/workspace-full-vnc)
+### Base Image : [baneeishaque/gitpod-full-vnc-bh-phpmyadmin-1846x968-idea-chrome-driver](https://hub.docker.com/r/baneeishaque/gitpod-full-vnc-bh-phpmyadmin-1846x968-idea-chrome-driver)
 
-### Base Image Repo. : [gitpod-io/workspace-images](https://github.com/gitpod-io/workspace-images)
-
----
+### Base Image Repo. : [ Baneeishaque /gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver ](https://github.com/Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1846x968-idea-chrome-driver)
 
 [//]: # "[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Baneeishaque/gitpod-full-vnc-bh-phpMyAdmin-1920x1080-idea-chrome-driver)"
-
-***BASH_HUB_ACCESS_TOKEN** & **BASH_HUB_SYSTEM_NAME** are User-Specific Environment Variables set via [account settings](https://gitpod.io/variables).*
