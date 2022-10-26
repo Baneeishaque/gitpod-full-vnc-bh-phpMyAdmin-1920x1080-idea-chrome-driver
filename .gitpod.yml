@@ -10,9 +10,7 @@ ports:
     onOpen: open-browser
   - name: phpMyAdmin
     port: 80
-    onOpen: open-browser
-  - port: 6942
-    onOpen: ignore
+    onOpen: open-browser  
 
 tasks:
   - name: Insatll & Configure BashHub
@@ -39,11 +37,17 @@ tasks:
         && docker login --username $(echo $DOCKER_HUB_USERNAME) --password $(echo $DOCKER_HUB_PASSWORD) \
         && exit
 
+  # - name: Setup JADX & dex2jar
+  #   command: |
+  #     echo "export PATH=$HOME/$(cat $HOME/dexToolsFolder):$HOME/$(cat $HOME/dexToolsFolder)/bin:$HOME/$(cat $HOME/jadxFolder)/bin:$PATH" >> ~/.bashrc \
+  #     && rm $HOME/dexToolsFolder $HOME/jadxFolder \
+  #     && source ~/.bashrc
+
   # - name: Run phpMyAdmin
   #   command: cd /opt/phpMyAdmin-5.2.0-all-languages && sudo php -S 0.0.0.0:80
 
   # - name: Run IntelliJ IDEA
-  #   command: cd /workspace && git clone --depth 1 "https://gitlab.com/baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio-gh-chrome-intellij-idea.git" intellij-idea-config && rm -rf ~/.config/JetBrains/IntelliJIdea2022.2 && mkdir -p ~/.config/JetBrains && ln -s `pwd`/intellij-idea-config/IntelliJIdea2022.2-config ~/.config/JetBrains/IntelliJIdea2022.2 && rm -rf ~/.local/share/JetBrains/IntelliJIdea2022.2 && mkdir -p ~/.local/share/JetBrains && ln -s `pwd`/intellij-idea-config/IntelliJIdea2022.2-local ~/.local/share/JetBrains/IntelliJIdea2022.2 && rm -rf ~/.local/share/JetBrains/consentOptions && ln -s `pwd`/intellij-idea-config/consentOptions ~/.local/share/JetBrains/consentOptions && rm -rf ~/.local/share/JetBrains/bl && ln -s `pwd`/intellij-idea-config/bl ~/.local/share/JetBrains/bl && rm -rf ~/.local/share/JetBrains/crl && ln -s `pwd`/intellij-idea-config/crl ~/.local/share/JetBrains/crl && cd /usr/local/idea-IU-222.3739.54/bin/ && ./idea.sh
+  #   command: cd /workspace && git clone --depth 1 "https://gitlab.com/baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio-gh-chrome-intellij-idea.git" intellij-idea-config && rm -rf ~/.config/JetBrains/IntelliJIdea2022.2 && mkdir -p ~/.config/JetBrains && ln -s `pwd`/intellij-idea-config/IntelliJIdea2022.2-config ~/.config/JetBrains/IntelliJIdea2022.2 && rm -rf ~/.local/share/JetBrains/IntelliJIdea2022.2 && mkdir -p ~/.local/share/JetBrains && ln -s `pwd`/intellij-idea-config/IntelliJIdea2022.2-local ~/.local/share/JetBrains/IntelliJIdea2022.2 && rm -rf ~/.local/share/JetBrains/consentOptions && ln -s `pwd`/intellij-idea-config/consentOptions ~/.local/share/JetBrains/consentOptions && rm -rf ~/.local/share/JetBrains/bl && ln -s `pwd`/intellij-idea-config/bl ~/.local/share/JetBrains/bl && rm -rf ~/.local/share/JetBrains/crl && ln -s `pwd`/intellij-idea-config/crl ~/.local/share/JetBrains/crl && cd /usr/local/idea-IU-222.4167.29/bin/ && ./idea.sh
 
   # - name: Open Google Chrome
   #   command: cd /workspace && git clone --depth 1 "https://gitlab.com/baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio-gh-chrome-private.git" chrome-config && export CHROME_CONFIG_HOME=`pwd`/chrome-config && google-chrome
@@ -77,7 +81,7 @@ tasks:
 
   # - name: Check VS Code Insiders
   #   command: code-insiders --version
-  
+
 github:
   prebuilds:
     master: true
